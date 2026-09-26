@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanderloom - Plan Your Next Journey</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-container">
+
+    <div class="logo">
+      <i class="fa-solid fa-compass"></i>
+      <span>Wanderloom</span>
+    </div>
+
+    <ul class="nav-menu">
+      <li><a href="#hotels">Hotels</a></li>
+      <li><a href="#restaurants">Restaurants</a></li>
+      <li><a href="#">Flights</a></li>
+    </ul>
+
+    <div class="header-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search...">
+    </div>
+
+    <div class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Discover places worth remembering</h1>
+      <p>Search destinations, hotels and restaurants all in one place.</p>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <form class="search-box">
+      <div class="search-field">
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" placeholder="Where do you want to go?">
+      </div>
+
+      <div class="search-field">
+        <label for="price">Price Range</label>
+        <select id="price">
+          <option value="any">Any</option>
+          <option value="low">₹ &nbsp;Budget</option>
+          <option value="mid">₹₹ &nbsp;Moderate</option>
+          <option value="high">₹₹₹ &nbsp;Luxury</option>
+        </select>
+      </div>
+
+      <div class="search-field">
+        <label for="rating">Rating</label>
+        <select id="rating">
+          <option value="any">Any</option>
+          <option value="3">3+ Stars</option>
+          <option value="4">4+ Stars</option>
+          <option value="4.5">4.5+ Stars</option>
+        </select>
+      </div>
+
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="listing-section" id="destinations">
+    <h2>Featured Destinations</h2>
+    <div class="card-grid">
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&auto=format&fit=crop" alt="Paris">
+        <div class="card-body">
+          <h3>Paris</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.7</div>
+          <p>Iconic landmarks, charming cafés and riverside walks along the Seine.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&auto=format&fit=crop" alt="Bali">
+        <div class="card-body">
+          <h3>Bali</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.8</div>
+          <p>Tropical beaches, ancient temples and lush green rice terraces.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&auto=format&fit=crop" alt="Tokyo">
+        <div class="card-body">
+          <h3>Tokyo</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.7</div>
+          <p>A vibrant blend of neon streets, quiet shrines and great food.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600&auto=format&fit=crop" alt="Santorini">
+        <div class="card-body">
+          <h3>Santorini</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+          <p>Whitewashed cliffside towns overlooking the deep blue Aegean Sea.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Popular Hotels -->
+  <section class="listing-section alt-bg" id="hotels">
+    <h2>Popular Hotels</h2>
+    <div class="card-grid">
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&auto=format&fit=crop" alt="Oceanview Grand">
+        <div class="card-body">
+          <h3>Oceanview Grand</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.6</div>
+          <p>Beachfront rooms with private balconies and an infinity pool.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&auto=format&fit=crop" alt="Mountain Retreat Lodge">
+        <div class="card-body">
+          <h3>Mountain Retreat Lodge</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.5</div>
+          <p>A cozy escape surrounded by pine forests and mountain trails.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&auto=format&fit=crop" alt="Downtown Boutique Hotel">
+        <div class="card-body">
+          <h3>Downtown Boutique Hotel</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.4</div>
+          <p>Stylish rooms in the heart of the city, close to everything.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&auto=format&fit=crop" alt="Skyline Suites">
+        <div class="card-body">
+          <h3>Skyline Suites</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.7</div>
+          <p>Modern suites with panoramic city views and a rooftop lounge.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Top Rated Restaurants -->
+  <section class="listing-section" id="restaurants">
+    <h2>Top-Rated Restaurants</h2>
+    <div class="card-grid">
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop" alt="Spice Garden">
+        <div class="card-body">
+          <h3>Spice Garden</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.5</div>
+          <p>Bold, flavorful dishes inspired by regional home-style cooking.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&auto=format&fit=crop" alt="Bella Vista">
+        <div class="card-body">
+          <h3>Bella Vista</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.6</div>
+          <p>Fresh seafood and pasta served with a stunning coastal view.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&auto=format&fit=crop" alt="Urban Bites">
+        <div class="card-body">
+          <h3>Urban Bites</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.4</div>
+          <p>Casual all-day dining with a menu built around local produce.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&auto=format&fit=crop" alt="Coastal Kitchen">
+        <div class="card-body">
+          <h3>Coastal Kitchen</h3>
+          <div class="rating"><i class="fa-solid fa-star"></i> 4.7</div>
+          <p>A relaxed café known for its brunch and freshly baked pastries.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2026 Wanderloom. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
